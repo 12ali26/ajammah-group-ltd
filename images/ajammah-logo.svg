@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <!-- Base rectangle with transparent background -->
+  <rect width="600" height="600" fill="transparent"/>
+  
+  <!-- AGL letters -->
+  <g>
+    <!-- A shape -->
+    <path d="M80,140 L200,480 L320,140 Z" fill="#424752" stroke="none"/>
+    <path d="M100,180 L200,440 L300,180 Z" fill="transparent" stroke="none"/>
+    
+    <!-- G shape -->
+    <path d="M320,140 C370,140 420,180 440,230 C460,280 460,340 430,390 C400,440 350,460 300,450 C310,400 320,350 330,300 L400,300 L400,250 L280,250 L280,450 C330,460 380,450 420,420 C460,390 480,340 480,290 C480,240 460,190 420,160 C380,130 320,120 280,140 L280,140 L320,140 Z" fill="#5d4c80" stroke="none"/>
+    
+    <!-- L shape -->
+    <path d="M490,140 L490,450 L660,450 L660,400 L550,400 L550,140 L490,140 Z" fill="#554977" stroke="none"/>
+    
+    <!-- Swoosh element -->
+    <path d="M280,420 C300,410 320,400 340,380 C370,350 390,310 390,270 C390,240 380,210 360,190 C340,170 320,160 280,155 C320,175 345,190 360,220 C375,250 370,290 350,320 C330,350 300,380 270,400 L280,420 Z" fill="#4ca6a4" stroke="none"/>
+  </g>
+  
+  <!-- AJAMMAH text -->
+  <text x="150" y="520" font-family="Arial, sans-serif" font-size="70" font-weight="bold" fill="#e6e6e6">AJAMMAH</text>
+  
+  <!-- GROUP LTD text -->
+  <text x="190" y="580" font-family="Arial, sans-serif" font-size="40" fill="#4ca6a4">GROUP LTD</text>
+</svg> 
