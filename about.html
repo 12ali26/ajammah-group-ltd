@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Ajammah Group Ltd</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- Import Map for JS Module Aliases -->
+    <script type="importmap">
+    {
+      "imports": {
+        "@js/": "./js/",
+        "@effects": "./js/3d-effects.js",
+        "@assistant": "./js/ai-assistant.js",
+        "@utils": "./js/utils.js",
+        "@animations": "./js/animations.js"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/ajammah-logo.svg" alt="Ajammah Group Ltd Logo">
+                <span>Ajammah Group Ltd</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Ajammah Group Ltd - Innovating at the Intersection of AI and Software Development</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="profile-photo">
+                            <!-- Company logo -->
+                            <img src="images/ajammah-logo.svg" alt="Ajammah Group Ltd Logo" class="company-logo">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>Hello! Ajammah Group Ltd is a forward-thinking technology company with a strong focus on Artificial Intelligence and Software Engineering. We thrive on creating innovative solutions and bringing complex ideas to life through code and intelligent systems. Our journey in the tech world has been fueled by a desire to solve real-world problems, explore the potential of AI, and build impactful software.</p>
+                        
+                        <p>Our core expertise encompasses Python, TensorFlow, React, Cloud Computing, and Natural Language Processing. We have extensive experience in developing and deploying machine learning models, building full-stack web applications, and working with large datasets. We're constantly learning and exploring new technologies to expand our capabilities and stay at the forefront of innovation.</p>
+                        
+                        <p>We're particularly excited about the potential of generative AI, reinforcement learning, and intelligent agents and their ability to transform industries and enhance human capabilities. Our goal is to continue developing cutting-edge AI solutions and software products that improve efficiency, enhance user experiences, and drive positive change.</p>
+                        
+                        <p>At Ajammah Group Ltd, we believe in the power of technology to transform businesses and improve lives. This belief drives everything we do and every solution we create.</p>
+                        
+                        <h3>Our Expertise</h3>
+                        <div class="skills-container">
+                            <div class="skill">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill">
+                                <i class="fas fa-brain"></i>
+                                <span>Machine Learning</span>
+                            </div>
+                            <div class="skill">
+                                <i class="fas fa-robot"></i>
+                                <span>AI Development</span>
+                            </div>
+                            <div class="skill">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill">
+                                <i class="fas fa-comment-alt"></i>
+                                <span>NLP</span>
+                            </div>
+                            <div class="skill">
+                                <i class="fas fa-cloud"></i>
+                                <span>Cloud Platforms</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ajammah Group Ltd. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/12ali26" target="_blank" class="social-link small"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link small"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link small"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="ai-assistant" id="ai-assistant">
+        <div class="ai-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="ai-chat-window" id="ai-chat-window">
+            <div class="ai-chat-header">
+                <h4>Ajammah AI Guide</h4>
+                <button id="close-ai" class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="ai-chat-messages" id="ai-chat-messages">
+                <div class="message ai-message">
+                    <p>Hello! How can I help you explore Ajammah Group's portfolio today?</p>
+                </div>
+            </div>
+            <div class="ai-chat-input">
+                <input type="text" id="ai-input" placeholder="Ask me anything...">
+                <button id="ai-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/ai-assistant.js"></script>
+</body>
+</html> 

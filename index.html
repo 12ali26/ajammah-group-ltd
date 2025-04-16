@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Professional Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- Import Map for JS Module Aliases -->
+    <script type="importmap">
+    {
+      "imports": {
+        "@js/": "./js/",
+        "@effects": "./js/3d-effects.js",
+        "@assistant": "./js/ai-assistant.js",
+        "@utils": "./js/utils.js",
+        "@animations": "./js/animations.js"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/ajammah-logo.svg" alt="Ajammah Group Ltd Logo">
+                <span>Ajammah Group Ltd</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Ajammah Group Ltd - Crafting Intelligent Solutions & Innovative Software</h1>
+                <p>A leading technology company specializing in AI development, software engineering, and beyond. Explore our work and let's connect.</p>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn primary">View Our Projects</a>
+                    <a href="about.html" class="btn secondary">Learn More About Us</a>
+                </div>
+            </div>
+            <div class="hero-3d-element" id="hero-canvas"></div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="featured-projects" class="featured-projects">
+            <div class="container">
+                <h2>Featured Work</h2>
+                <p class="section-intro">Check out some of our highlighted projects and AI solutions developed by our expert team.</p>
+                
+                <div class="featured-grid">
+                    <!-- Featured Project 1 -->
+                    <div class="featured-card">
+                        <div class="featured-image">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="featured-content">
+                            <h3>Conversational AI Agent</h3>
+                            <p>An intelligent conversational agent that uses natural language processing to understand and respond to user queries effectively.</p>
+                            <div class="featured-links">
+                                <a href="projects.html#project1" class="btn small">View Project</a>
+                                <a href="https://github.com/12ali26/conversational-ai" target="_blank" class="btn small secondary">GitHub <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Project 2 -->
+                    <div class="featured-card">
+                        <div class="featured-image">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="featured-content">
+                            <h3>Computer Vision Solution</h3>
+                            <p>A computer vision application that detects and classifies objects in real-time with high accuracy.</p>
+                            <div class="featured-links">
+                                <a href="projects.html#project2" class="btn small">Explore Demo</a>
+                                <a href="https://github.com/12ali26/cv-object-detection" target="_blank" class="btn small secondary">GitHub <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="view-all">
+                    <a href="projects.html" class="btn secondary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Snippet -->
+        <section id="about-snippet" class="about-snippet">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about-brief">
+                    <div class="about-image-small">
+                        <img src="images/ajammah-logo.svg" alt="Ajammah Group Ltd Logo" class="company-logo">
+                    </div>
+                    <div class="about-text-brief">
+                        <p>Ajammah Group Ltd is a forward-thinking tech company specializing in AI development and software engineering. With expertise in creating intelligent solutions and intuitive interfaces, we focus on building tools that make a difference.</p>
+                        <a href="about.html" class="btn small">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Agent Demo Teaser -->
+        <section id="ai-teaser" class="ai-teaser">
+            <div class="container">
+                <h2>Exploring Intelligent Solutions</h2>
+                <p class="section-intro">Discover our work in developing and showcasing intelligent AI agents that can understand, learn, and assist in various domains.</p>
+                <div class="ai-teaser-content">
+                    <div class="ai-teaser-visual">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="ai-teaser-text">
+                        <p>Our AI solutions range from conversational assistants to recommendation systems and computer vision applications. Each project explores different aspects of artificial intelligence and machine learning, tailored to our clients' needs.</p>
+                        <a href="projects.html#ai-projects" class="btn primary">See Our AI Solutions</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Projects -->
+        <section id="github-projects" class="github-projects">
+            <div class="container">
+                <h2>Open Source Projects</h2>
+                <p class="section-intro">Check out our open source contributions and ongoing projects on GitHub.</p>
+                <div class="github-cta">
+                    <a href="https://github.com/12ali26" target="_blank" class="btn primary github-btn">
+                        <i class="fab fa-github"></i> Visit Our GitHub
+                    </a>
+                    <p>Collaborate with us on GitHub and stay updated with our latest developments.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ajammah Group Ltd. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/12ali26" target="_blank" class="social-link small"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link small"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link small"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="ai-assistant" id="ai-assistant">
+        <div class="ai-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="ai-chat-window" id="ai-chat-window">
+            <div class="ai-chat-header">
+                <h4>Ajammah AI Guide</h4>
+                <button id="close-ai" class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="ai-chat-messages" id="ai-chat-messages">
+                <div class="message ai-message">
+                    <p>Hello! How can I help you explore Ajammah Group's portfolio today?</p>
+                </div>
+            </div>
+            <div class="ai-chat-input">
+                <input type="text" id="ai-input" placeholder="Ask me anything...">
+                <button id="ai-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/3d-effects.js"></script>
+    <script type="module" src="js/ai-assistant.js"></script>
+</body>
+</html> 

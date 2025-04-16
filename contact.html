@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ajammah Group Ltd</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- Import Map for JS Module Aliases -->
+    <script type="importmap">
+    {
+      "imports": {
+        "@js/": "./js/",
+        "@effects": "./js/3d-effects.js",
+        "@assistant": "./js/ai-assistant.js",
+        "@utils": "./js/utils.js",
+        "@animations": "./js/animations.js"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/ajammah-logo.svg" alt="Ajammah Group Ltd Logo">
+                <span>Ajammah Group Ltd</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p class="section-intro">Interested in working with us or learning more about our services? Get in touch today.</p>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>Feel free to reach out to Ajammah Group Ltd for collaborations, inquiries, or to discuss your project needs.</p>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@ajammahgroup.com">info@ajammahgroup.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+1234567890">+123 456 7890</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Business Avenue, Tech City</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/12ali26" target="_blank">github.com/12ali26</a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/12ali26" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ajammah Group Ltd. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/12ali26" target="_blank" class="social-link small"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link small"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link small"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="ai-assistant" id="ai-assistant">
+        <div class="ai-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="ai-chat-window" id="ai-chat-window">
+            <div class="ai-chat-header">
+                <h4>Ajammah AI Guide</h4>
+                <button id="close-ai" class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="ai-chat-messages" id="ai-chat-messages">
+                <div class="message ai-message">
+                    <p>Hello! How can I help you explore Ajammah Group's portfolio today?</p>
+                </div>
+            </div>
+            <div class="ai-chat-input">
+                <input type="text" id="ai-input" placeholder="Ask me anything...">
+                <button id="ai-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/ai-assistant.js"></script>
+</body>
+</html> 
